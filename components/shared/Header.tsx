@@ -15,7 +15,7 @@ const Header = () => {
 					className="w-36"
 				>
 					<Image
-						src="/assets/images/logo.svg"
+						src="/assets/images/logo.png"
 						alt="evently logo"
 						width={128}
 						height={38}

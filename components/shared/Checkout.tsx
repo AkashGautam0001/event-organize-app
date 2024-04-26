@@ -1,3 +1,4 @@
+"use client";
 import { IEvent } from "@/lib/database/models/event.model";
 import React from "react";
 import { Button } from "../ui/button";
@@ -43,10 +44,7 @@ const Checkout = async ({
 	};
 
 	return (
-		<form
-			action={onCheckout}
-			method="post"
-		>
+		<form action={onCheckout}>
 			<Button
 				type="submit"
 				role="link"

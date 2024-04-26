@@ -28,7 +28,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useUploadThing } from "@/lib/uploadThing";
 import { useRouter } from "next/navigation";
 import { createEvent, updateEvent } from "@/lib/actions/event.actions";
-import { Toaster } from "@/components/ui/sonner";
 import { toast } from "sonner";
 import { IEvent } from "@/lib/database/models/event.model";
 
@@ -383,7 +382,6 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
 						? "Submitting..."
 						: `${type} Event `}
 				</Button>
-				<Toaster className="bg-white text-black " />
 			</form>
 		</Form>
 	);
